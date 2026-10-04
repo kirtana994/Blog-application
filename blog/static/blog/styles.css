@@ -1,0 +1,323 @@
+/* =========================================
+   BLOG THEME
+   ========================================= */
+
+:root {
+    --olive: #6B705C;
+    --dark-olive: #3F4436;
+    --terracotta: #CB997E;
+    --peach: #DDBEA9;
+    --cream: #FFFDF7;
+    --light-green: #E9EDC9;
+    --text: #2F302A;
+    --muted: #77776F;
+}
+
+
+/* =========================================
+   GENERAL
+   ========================================= */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+body {
+    background-color: var(--cream);
+    color: var(--text);
+}
+
+main {
+    min-height: 80vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text);
+}
+
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.navbar {
+    background-color: var(--dark-olive) !important;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.navbar .nav-link {
+    color: #F5F1E8 !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--peach) !important;
+}
+
+
+/* =========================================
+   SEARCH
+   ========================================= */
+
+.navbar .form-control {
+    border: none;
+    border-radius: 20px;
+}
+
+.navbar .btn-outline-light {
+    border-color: var(--peach);
+    color: var(--peach);
+    border-radius: 20px;
+}
+
+.navbar .btn-outline-light:hover {
+    background-color: var(--terracotta);
+    border-color: var(--terracotta);
+    color: white;
+}
+
+
+/* =========================================
+   BOOTSTRAP PRIMARY BUTTON
+   ========================================= */
+
+.btn-primary {
+    background-color: var(--olive);
+    border-color: var(--olive);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-olive);
+    border-color: var(--dark-olive);
+}
+
+
+/* =========================================
+   CARDS
+   ========================================= */
+
+.card {
+    border: none;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.card.shadow-sm {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06) !important;
+}
+
+
+/* =========================================
+   BLOG CARDS
+   ========================================= */
+
+.row .card {
+    overflow: hidden;
+}
+
+.row .card-img-top {
+    object-fit: cover;
+}
+
+
+/* =========================================
+   BLOG TITLES
+   ========================================= */
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-title a {
+    color: var(--text);
+}
+
+.card-title a:hover {
+    color: var(--olive);
+}
+
+
+/* =========================================
+   FORMS
+   ========================================= */
+
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #DDD9CF;
+}
+
+.form-control:focus {
+    border-color: var(--olive);
+    box-shadow: 0 0 0 0.2rem rgba(107, 112, 92, 0.15);
+}
+
+
+/* =========================================
+   FORM LABELS
+   ========================================= */
+
+.form-label {
+    font-weight: 500;
+    color: var(--text);
+}
+
+
+/* =========================================
+   LINKS
+   ========================================= */
+
+a {
+    color: var(--olive);
+}
+
+a:hover {
+    color: var(--dark-olive);
+}
+
+
+/* =========================================
+   ALERTS
+   ========================================= */
+
+.alert-info {
+    background-color: var(--light-green);
+    border-color: var(--light-green);
+    color: var(--dark-olive);
+}
+
+.alert-warning {
+    background-color: #F8E8DC;
+    border-color: #F8E8DC;
+    color: #6B5145;
+}
+
+
+/* =========================================
+   DELETE PAGE
+   ========================================= */
+
+.text-danger {
+    color: #A65D57 !important;
+}
+
+.btn-danger {
+    background-color: #A65D57;
+    border-color: #A65D57;
+}
+
+.btn-danger:hover {
+    background-color: #854A45;
+    border-color: #854A45;
+}
+
+
+/* =========================================
+   EDIT BUTTON
+   ========================================= */
+
+.btn-warning {
+    background-color: var(--peach);
+    border-color: var(--peach);
+    color: var(--text);
+}
+
+.btn-warning:hover {
+    background-color: var(--terracotta);
+    border-color: var(--terracotta);
+    color: white;
+}
+
+
+/* =========================================
+   SECONDARY BUTTON
+   ========================================= */
+
+.btn-secondary {
+    background-color: #77776F;
+    border-color: #77776F;
+}
+
+.btn-secondary:hover {
+    background-color: #5F6059;
+    border-color: #5F6059;
+}
+
+
+/* =========================================
+   BLOG CONTENT
+   ========================================= */
+
+article .card-body {
+    line-height: 1.8;
+}
+
+article img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================================
+   PAGINATION
+   ========================================= */
+
+.pagination .page-link {
+    color: var(--olive);
+    border-color: #DDD9CF;
+}
+
+.pagination .page-link:hover {
+    background-color: var(--light-green);
+    color: var(--dark-olive);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--olive);
+    border-color: var(--olive);
+    color: white;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .navbar .form-control {
+        margin-bottom: 8px;
+    }
+
+    .navbar form {
+        width: 100%;
+    }
+
+    .navbar form .form-control {
+        flex: 1;
+    }
+
+    article .card-body {
+        padding: 1.25rem !important;
+    }
+
+}
+

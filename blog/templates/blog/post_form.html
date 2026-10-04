@@ -1,0 +1,54 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}
+Create Post - My Blog
+{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+
+    <div class="col-lg-8">
+
+        <div class="card shadow-sm">
+
+            <div class="card-body p-4">
+
+                <h1 class="mb-4">Create New Post</h1>
+
+                <form method="POST" enctype="multipart/form-data">
+
+                    {% csrf_token %}
+
+                    {{ form.as_p }}
+
+
+                    <div class="mt-4">
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+                            Create Post
+                        </button>
+
+                        <a
+                            href="{% url 'home' %}"
+                            class="btn btn-secondary"
+                        >
+                            Cancel
+                        </a>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
